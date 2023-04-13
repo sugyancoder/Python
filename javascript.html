@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    
+
+    
+</head>
+<body>
+
+    <p id="text">Hello, World!</p>
+
+    <button id="Button">Change text</button>
+
+    <p id="Second Level">Javascript is ...</p>
+
+    
+    <button id="Button2">Append Text</button>
+
+    <p id="Text2"></p>
+
+    <button  id="Button3">Show Text</button>
+
+    <p id="Text3">Random Text</p>
+    <button id="styletext">Style It</button>
+
+
+
+    <script>
+
+        document.getElementById("Button").onclick = 
+        function() {
+
+            document.getElementById("text").innerHTML = "Hello, Sugyan!";
+        }
+
+        document.getElementById("Button2").onclick = 
+        function() {
+
+            document.getElementById("Second Level").innerHTML = "I think " +  document.getElementById("Second Level").innerHTML + "Useful!";
+        }
+
+        document.getElementById("Button3").onclick =
+        function() {
+            document.getElementById("Text2").innerHTML = "No longer invis";
+
+        }
+
+        document.getElementById("styletext").onclick = 
+        function() {
+            document.getElementById("Text3").style.fontSize = "60px"
+        }
+
+
+
+
+     
+     
+    </script>
+    
+
+    
+
+
+    
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p><input type="text" id="codeWord"></p>
+    <p><button id="codeWordEntered"> Unlock </button></p>
+
+
+
+
+
+    <script type="text/javascript">
+
+
+
+        document.getElementById("codeWordEntered").onclick = function () {
+            
+            var codeWordEntered = document.getElementById("codeWord").value;
+
+            var codeWord = "!(&&";
+        
+            if (codeWordEntered == codeWord) {
+                alert("Unlocked")
+            } else
+
+            alert("FalseCodewordEntered")
+        }
+  
+
+
+    </script>
+    
+</body>
+</html>
